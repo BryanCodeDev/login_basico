@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Formulario de Inicio de Sesión</title>
+    <!-- Enlace al archivo CSS para los estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor principal que centra todo el formulario en la pantalla -->
+    <div class="contenedor-login">
+        <!-- Caja del formulario con sombra y bordes redondeados -->
+        <div class="caja-login">
+            <!-- Título del formulario -->
+            <h2>Iniciar Sesión</h2>
+            
+            <!-- Formulario de login - action="#" significa que no se envía a ningún lado por ahora -->
+            <form action="#" method="POST">
+                <!-- Campo para el correo/email -->
+                <div class="grupo-input">
+                    <!-- Etiqueta para el campo de email -->
+                    <label for="email">Correo Electrónico:</label>
+                    <!-- Input tipo email - el atributo "id" debe coincidir con el "for" de la etiqueta -->
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="ejemplo@correo.com" 
+                        required
+                    >
+                </div>
+
+                <!-- Campo para la contraseña -->
+                <div class="grupo-input">
+                    <label for="password">Contraseña:</label>
+                    <!-- Input tipo password - oculta los caracteres mientras se escribe -->
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Escribe tu contraseña" 
+                        required
+                    >
+                </div>
+
+                <!-- Botón para enviar el formulario -->
+                <button type="submit" class="boton-login">Ingresar</button>
+            </form>
+
+            <!-- Texto adicional debajo del formulario -->
+            <p class="texto-registro">
+                ¿No tienes cuenta? <a href="#">Regístrate aquí</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

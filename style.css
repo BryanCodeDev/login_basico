@@ -1,0 +1,159 @@
+/* Estilos basicos para el formulario de login */
+
+/* Reset basico: quita los margenes que el navegador pone por defecto */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+   Cuerpo de la pagina:
+   - font-family: fuente del texto
+   - background: color de fondo
+   - min-height: 100vh = altura minima de toda la pantalla
+   - display: flex = sistema para centrar elementos
+   - justify-content: center = centra horizontalmente
+   - align-items: center = centra verticalmente
+*/
+body {
+    font-family: Arial, sans-serif;
+    background: #667eea;  /* Fondo color lila */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 
+   Contenedor principal del formulario:
+   - background: color blanco
+   - padding: espacio interno (40px arriba/abajo, 30px izquierda/derecha)
+   - border-radius: bordes redondeados (10px)
+   - box-shadow: sombra para que parezca que esta levantado
+   - max-width: ancho maximo de 400px
+   - margin: 0 auto = centra horizontalmente
+   - width: 100% = ocupa todo el ancho disponible
+*/
+.caja-login {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* 
+   Titulo del formulario:
+   - text-align: center = centra el texto
+   - color: color del texto (gris oscuro)
+   - margin-bottom: espacio debajo del titulo (30px)
+*/
+.caja-login h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* 
+   Cada grupo de input (email y contraseña):
+   - margin-bottom: espacio entre los campos (20px)
+*/
+.grupo-input {
+    margin-bottom: 20px;
+}
+
+/* 
+   Etiquetas (label):
+   - display: block = ocupa toda la linea (no flota a los lados)
+   - margin-bottom: espacio debajo de la etiqueta (5px)
+   - color: color del texto
+   - font-weight: negrita (bold)
+*/
+.grupo-input label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* 
+   Campos de entrada (input):
+   - width: 100% = ocupa todo el ancho disponible
+   - padding: espacio interno (10px)
+   - border: borde de 1px solido color gris claro
+   - border-radius: bordes ligeramente redondeados (5px)
+   - font-size: tamaño del texto (14px)
+*/
+.grupo-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* 
+   Boton de login:
+   - width: 100% = ocupa todo el ancho
+   - padding: espacio interno (12px)
+   - background: color de fondo (degradado)
+   - color: color del texto (blanco)
+   - border: sin borde
+   - border-radius: bordes redondeados (5px)
+   - font-size: tamaño del texto (16px)
+   - font-weight: negrita
+   - cursor: cambia a manito cuando pasas el mouse
+*/
+.boton-login {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 
+   Texto de registro:
+   - text-align: center = centra el texto
+   - margin-top: espacio arriba (20px)
+   - color: color del texto (gris)
+*/
+.texto-registro {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+/* 
+   Enlaces:
+   - color: color azul
+   - text-decoration: none (sin subrayado)
+   - font-weight: negrita
+*/
+.texto-registro a {
+    color: #667eea;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 
+   Cuando pasas el mouse sobre el enlace:
+   - text-decoration: underline = se subraya
+*/
+.texto-registro a:hover {
+    text-decoration: underline;
+}
+
+/* 
+   Cuando pasas el mouse sobre el boton:
+   - box-shadow: sombra mas grande (efecto 3D)
+*/
+.boton-login:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
